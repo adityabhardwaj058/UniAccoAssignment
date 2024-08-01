@@ -1,0 +1,99 @@
+.movieCard {
+  display: inline-block;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 2 / 3;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.details {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.title {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.information {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.movieCardModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.modalPoster {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  aspect-ratio: 2 / 3;
+  border-radius: 1rem;
+}
+
+.modalDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  gap: 1.5rem;
+}
+
+.crums {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+
+.with-vertical-line {
+  display: inline-block;
+  border-left: 1.5px solid rgb(169, 169, 169);
+  height: 50%;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.noMovies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+}

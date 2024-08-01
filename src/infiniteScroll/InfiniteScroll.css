@@ -1,0 +1,7 @@
+.movieCardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+  height: 100%;
+  row-gap: 1.5rem;
+  column-gap: 1.25rem;
+}
